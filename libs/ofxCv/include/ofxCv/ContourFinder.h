@@ -64,8 +64,7 @@ namespace ofxCv {
 		cv::RotatedRect getMinAreaRect(unsigned int i) const;
 		cv::Point2f getMinEnclosingCircle(unsigned int i, float& radius) const;
 		cv::RotatedRect getFitEllipse(unsigned int i) const;
-        std::vector<cv::Point> getFitQuad(unsigned int i) const;
-        bool getHole(unsigned int i) const;
+		std::vector<cv::Point> getFitQuad(unsigned int i) const;
 		cv::Vec2f getVelocity(unsigned int i) const;
 		
 		RectTracker& getTracker();
@@ -108,8 +107,7 @@ namespace ofxCv {
 		std::vector<ofPolyline> polylines;
 		
 		RectTracker tracker;
-        std::vector<cv::Rect> boundingRects;
-        std::vector<bool> holes;
+		std::vector<cv::Rect> boundingRects;
 
 		int contourFindingMode;
 		bool sortBySize;

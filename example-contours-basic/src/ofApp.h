@@ -15,5 +15,4 @@ public:
     
     ofxPanel gui;
     ofParameter<float> minArea, maxArea, threshold;
-    ofParameter<bool> holes;
 };
